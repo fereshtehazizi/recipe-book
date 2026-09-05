@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	max-width: 1560px;
+	margin: 0 auto;
+	padding: 16px 24px 40px;
+	line-height: 1.5;
+}
+
+.navbar {
+	min-height: 60px;
+	height: auto !important;
+	padding: 14px 20px !important;
+	margin-bottom: 12px;
+}
+
+.navdiv {
+	gap: 16px 28px;
+	flex-wrap: wrap;
+}
+
+.logo a {
+	display: block;
+	font-size: clamp(1.6rem, 3vw, 2.2rem) !important;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 8px 22px;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: block !important;
+}
+
+nav li a,
+li a {
+	display: inline-block;
+	margin-right: 0 !important;
+	line-height: 1.3;
+}
+
+section,
+section1,
+main,
+footer,
+header {
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	margin: 28px 0 12px;
+	font-size: clamp(2rem, 5vw, 3.125rem) !important;
+	line-height: 1.15;
+}
+
+h2 {
+	margin: 24px 0 12px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+hr {
+	margin: 24px 0;
+}
+
+table {
+	width: 100% !important;
+	max-width: 100%;
+	margin: 0 auto 28px;
+	border-spacing: 12px 10px;
+}
+
+table td,
+table th {
+	padding: 8px;
+	vertical-align: top;
+	overflow-wrap: anywhere;
+}
+
+table img {
+	display: block;
+	width: 100% !important;
+	max-width: 100%;
+	height: auto !important;
+	aspect-ratio: 10 / 7;
+	object-fit: cover;
+}
+
+.box {
+	width: 100% !important;
+	min-height: 55px;
+	height: auto !important;
+	padding: 12px !important;
+	line-height: 1.2;
+}
+
+article {
+	width: auto !important;
+	max-width: 760px;
+	margin: 0 auto 24px !important;
+	line-height: 1.7;
+}
+
+.fieldset {
+	width: auto !important;
+	max-width: 760px;
+	margin: 24px auto !important;
+}
+
+.fieldset input,
+.fieldset textarea,
+.fieldset select {
+	max-width: 100%;
+}
+
+@media (max-width: 760px) {
+	body {
+		padding: 10px 12px 28px;
+	}
+
+	.navdiv {
+		align-items: stretch;
+	}
+
+	.logo,
+	nav ul {
+		width: 100%;
+	}
+
+	nav ul {
+		justify-content: flex-start;
+	}
+
+	table,
+	table tbody,
+	table tr,
+	table td,
+	table th {
+		display: block;
+		width: 100% !important;
+	}
+
+	table {
+		border-spacing: 0;
+	}
+
+	table td,
+	table th {
+		padding: 8px 0;
+	}
+
+	table img {
+		max-height: none;
+	}
+
+	table th {
+		margin-top: 12px;
+	}
+
+	.fieldset {
+		padding: 20px !important;
+	}
+
+	.legend {
+		font-size: 2.2em !important;
+	}
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index.html</title>
+    <link rel="stylesheet" href="assets/css/site.css">
     <style type="text/css">
         a{
             text-decoration: none; font-family: Arial, Helvetica, sans-serif; color: #fff;
@@ -51,13 +52,19 @@
             word-wrap: break-word; width: 600px; text-align: center; margin-left: 500px;
         }
         .fieldset{
-             text-align: center; width: 490px; margin-left: 500px;
+             width: 600px !important; max-width: 100%; padding: 1em 4em 1em 2em; border: solid 1px #561C24; border-radius: 10px; background-color: #561C24; margin: 24px auto; text-align: left;
+        }
+        .fieldset fieldset{
+            border: 0; padding: 0; margin: 0;
         }
         .form-container{
-            display: inline; 
+            display: block; padding-top: 5px;
+        }
+        .form-container input{
+            width: 100%; max-width: 100%; padding: 8px; font-size: 15px; font-family: Arial, Helvetica, sans-serif;
         }
         label{
-            color:black; position: relative; font-size: 1; font-family: Arial, Helvetica, sans-serif; 
+            color: #fff; position: relative; font-size: 1.1em; font-family: Arial, Helvetica, sans-serif; 
         }
          hr{
            border: #561C24 0.25px solid;
@@ -85,9 +92,9 @@
         <h2>🔥 Recently Add Recipes</h2>
         <table>
             <tr>
-                <td><img src="butter2.jpg" alt="Butter chicken" width="500" height="350"></td>
-                <td><img src="Instant Ramen.jpg" alt="Instant Ramen" width="500" height="350"></td>
-                <td><img src="spicy2.jpg" alt="spicy chicken" width="500" height="350"></td>
+                <td><img src="assets/images/butter2.jpg" alt="Butter chicken" width="500" height="350"></td>
+                <td><img src="assets/images/Instant Ramen.jpg" alt="Instant Ramen" width="500" height="350"></td>
+                <td><img src="assets/images/spicy2.jpg" alt="spicy chicken" width="500" height="350"></td>
             </tr>
             <tr>
                 <tr>
@@ -118,9 +125,9 @@
         <h2>😋 All time favorites</h2>
         <table>
             <tr>
-                <td><img src="Baked.png" alt="Baked" width="500" height="350"></td>
-                <td><img src="Baked2.png" alt="Baked2" width="500" height="350"></td>
-                <td><img src="Baked3.png" alt="Baked3" width="500" height="350"></td>
+                <td><img src="assets/images/Baked.png" alt="Baked" width="500" height="350"></td>
+                <td><img src="assets/images/Baked2.png" alt="Baked2" width="500" height="350"></td>
+                <td><img src="assets/images/Baked3.png" alt="Baked3" width="500" height="350"></td>
             </tr>
             <tr>
                 <td><div class="box">Croissant </div></td>

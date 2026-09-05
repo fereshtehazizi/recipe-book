@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style type="text/css">
         a{
             text-decoration: none; font-family: Arial, Helvetica, sans-serif
@@ -23,6 +27,35 @@
         li a{
             color: white; font-size: 18px; font-weight: bold; margin-right: 25px; 
         }
+        body{
+            background-color: #FFFBE6;
+        }
+        .font{
+            font-family: dancing script; color: black; text-align: center;
+        }
+        .fieldset{
+            padding: 1em 4em; padding-right: 15px; border: solid 1px #561C24; border-radius: 10px; background-color: #561C24; width: 700px;
+            margin-left: auto; margin-right: auto; text-align: left;
+        }
+        .legend{
+            font-size: 3em; color: white; padding-bottom: 15px; margin-left: auto; margin-right: auto; padding-top: 10px;
+        }
+        label{
+            color: #fff; position: relative; font-size: 1.1em; font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-container{
+            padding-top: 5px;
+        }
+        .form-container input,
+        .form-container textarea{
+            width: 100%; max-width: 100%; padding: 8px; font-size: 15px; font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-container textarea{
+            resize: vertical;
+        }
+        .submit-button{
+            height: 35px; width: 100px; margin-top: 8px;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +71,35 @@
             </ul>
         </nav>
     </aside>
-    <section>
-    </section>
+    <header>
+        <div class="font">
+            <h1>We would love to hear from you!</h1>
+            <p><h2>Have a question, suggestion, or recipe idea? Send us a message.</h2></p>
+        </div>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <div class="fieldset">
+                <div class="legend"><legend>Contact Us</legend></div>
+                <label for="name">Name</label><br>
+                <div class="form-container">
+                    <input type="text" id="name" name="name" required><br><br>
+                </div>
+                <label for="email">E-mail</label><br>
+                <div class="form-container">
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+                <label for="subject">Subject</label><br>
+                <div class="form-container">
+                    <input type="text" id="subject" name="subject" required><br><br>
+                </div>
+                <label for="message">Message</label><br>
+                <div class="form-container">
+                    <textarea id="message" name="message" rows="8" required></textarea><br><br>
+                </div>
+                <input class="submit-button" type="submit" value="Send message">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
