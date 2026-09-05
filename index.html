@@ -23,23 +23,23 @@
         li a{
             color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
         }
-       .box{
-            width: 175px; height: 55px; border-color: black; border-radius: 10px; position: relative; margin: 0; color: white; padding-left: 10px;  display: flex;
+        .box{
+            width: 175px; height: 55px; background-color: #561C24; border-color: black; border-radius: 10px; position: relative; margin: 0;
         }
-        .box input{
-            font-size: 15px; font-weight: 600; font-family: Arial, Helvetica, sans-serif ;
+        .box{
+            font-size: 23px; font-weight: 600; color: white; padding-left: 10px;  display: flex; align-items: center; font-family: Arial, Helvetica, sans-serif;
         }
         td button{
             padding: 5px; height: 5%; width: 100px; background-color: rgb(83, 6, 6); border-radius: 8px;
         }
         table{
-            font-family: Arial, Helvetica, sans-serif; width: 900px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         h2{
             font-family: Arial, Helvetica, sans-serif;
         }
         p{
-            font-family: Arial, Helvetica, sans-serif; font-weight: 600; text-align: center;
+            font-family: Arial, Helvetica, sans-serif; font-weight: 600;
         }
         table td{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 17px;
@@ -50,21 +50,14 @@
         article{
             word-wrap: break-word; width: 600px; text-align: center; margin-left: 500px;
         }
-      .fieldset{
-            padding: 1em 2em; padding-right: 15px; border: solid 1px #561C24; border-radius: 10px; background-color: #561C24;
-            margin-left: 530px; margin-right: auto; margin-top: 25px; height: 480px; width: 500px; 
+        .fieldset{
+             text-align: center; width: 490px; margin-left: 500px;
         }
-        .legend{
-            font-size: 3em; color: white; padding-bottom: 15px; margin-left: auto; margin-right: auto; padding-top: 10px;
+        .form-container{
+            display: inline; 
         }
-        .form-container :hover{
-            border: 2px solid;  border-radius: 8px; background-color: #561C24; color: white; 
-        }
-        .form-container :focus{
-            border: 2px solid rgb(60, 27, 3); border-radius: 8px; display: block; text-align: center;
-        } 
         label{
-            color: #fff; position: relative; font-size: 1em; font-family: Arial, Helvetica, sans-serif; 
+            color:black; position: relative; font-size: 1; font-family: Arial, Helvetica, sans-serif; 
         }
          hr{
            border: #561C24 0.25px solid;
@@ -158,23 +151,15 @@
             We believe cooking should be fun, comforting, and accessible to everyone, no matter your experience in the kitchen. That’s why we’ve gathered our favorite recipes — from everyday meals to festive favorites — all carefully tested and made easy to follow.
             Our passion for food comes from shared moments around the table, family traditions, and the joy of discovering new flavors. This website is our way of sharing that passion with you — one recipe at a time.
             Whether you're here to try something new or revisit a classic, we're glad you stopped by. Thank you for being part of our cooking journey. Let’s keep the kitchen warm and the meals delicious.</article>
+            <h1>Contact Us</h1>
             <form action="#" method="post">
                 <div class="fieldset">
-                <div class="legend"><legend>Contact Us</legend></div>
-                    <label for="name">Name</label><br>
-                    <div class="form-container">
-                    <input type="text" id="name" name="info" required><br><br></div>
-                    <label for="last">Last Name</label><br>
-                    <div class="form-container">
-                    <input type="text" id="last" name="info" required><br><br></div>
-                    <label for="re-name">E-mail</label><br>
-                    <div class="form-container">
-                    <input type="email" id="E-m" name="info" required><br><br></div>
-                     <label for="com">Comment here...</label>
-            <div class="form-container">
-            <textarea name="comment" id="com" rows="10" cols="40" required></textarea></div>
-            <div class="box">
-            <input type="submit" value="send" style="height:35px; width:100px" required></div>
+                <fieldset>
+                <label for="N">Name</label>
+                <div class="form-container"><input type="text" id="N" name="info" placeholder="Your Name" required></div>
+                <label for="E">E-mail</label>
+                <div class="form-container"><input type="email" name="info" id="E" placeholder="Your E-mail" required></div><br><br>
+                <input type="button" value="Submit">
             </fieldset>
         </div>
         </form>
